@@ -121,10 +121,15 @@
                 score++;
                 scoreSpan.textContent = score;
 
+                trueSound.pause();
+                trueSound.currentTime = 0;
                 trueSound.play();
+                
 
                 if (score === 6) {
 
+                    winSound.pause();
+                    winSound.currentTime = 0;
                     winSound.play();
 
                     let message = "";
@@ -166,6 +171,8 @@
             else {
                 isBoardLocked = true // ပုံနှစ်ပုံကိုသွားစစ်နေချိန် ကျန်တဲ့ပုံတွေကိုနှိပ်လို့မရအောင်
 
+                falseSound.pause();
+                falseSound.currentTime = 0;
                 falseSound.play();
 
                 setTimeout(() => {
