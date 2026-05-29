@@ -21,9 +21,9 @@
         const box = document.querySelector('.box');
         const showMessageBox = document.querySelector(".showMessageBox");
 
-        const trueSound = new Audio("/sounds/trueSound.wav")
-        const falseSound = new Audio ("/sounds/falseSound.wav")
-        const winSound = new Audio ("/sounds/winSound.wav")
+        const trueSound = new Audio("sounds/trueSound.wav")
+        const falseSound = new Audio ("sounds/falseSound.wav")
+        const winSound = new Audio ("sounds/winSound.wav")
 
         const images = [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7tOxhCMXNYBtYPcsAT8FzehlhMvJJZdzPQ&s",
