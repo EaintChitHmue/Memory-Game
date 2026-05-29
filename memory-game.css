@@ -1,0 +1,226 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(rgb(126, 130, 186), rgb(25, 25, 43));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.stuff {
+  width: 90vmin;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 35px;
+  color: rgb(161, 175, 241);
+  margin-top: 30px;
+}
+
+.start button {
+  font-size: 30px;
+  border: none;
+  color: rgb(6, 205, 6);
+  background: none;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.timer {
+  font-size: 25px;
+  color: rgb(192, 226, 39);
+}
+
+.count {
+  font-size: 25px;
+  color: rgb(23, 147, 230);
+}
+
+.score {
+  font-size: 25px;
+  color: #b978eb;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 16, 78);
+  padding: 18px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back,
+.front {
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  background-image: radial-gradient(rgb(102, 102, 170), rgb(34, 34, 104));
+  border-radius: 5px;
+}
+
+.back {
+  display: none;
+}
+
+.card.active .back {
+  display: block;
+}
+
+.card.active .front {
+  display: none;
+}
+
+.back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.showMessageBox {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.restartbtn {
+  color: navy;
+  background: none;
+  border: none;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 30px auto 0;
+  cursor: pointer;
+}
+
+.start:hover {
+  transform: scale(1.2);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border-color: rgb(13, 137, 214);
+  cursor: pointer;
+}
+
+.restartbtn:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .stuff {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 33px;
+    margin-top: 25px;
+  }
+
+  .start button {
+    font-size: 28px;
+    margin: 15px;
+  }
+
+  .timer {
+    font-size: 23px;
+  }
+
+  .count {
+    font-size: 23px;
+  }
+
+  .score {
+    font-size: 23px;
+  }
+
+  .box {
+    padding: 16px;
+    margin: 18px;
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .showMessageBox {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .restartbtn {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stuff {
+    margin: 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .start button {
+    font-size: 25px;
+    margin: 15px;
+  }
+
+  .timer {
+    font-size: 20px;
+  }
+
+  .count {
+    font-size: 20px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .showMessageBox {
+    font-size: 15px;
+    margin: 20px;
+  }
+
+  .restartbtn {
+    font-size: 20px;
+  }
+}
